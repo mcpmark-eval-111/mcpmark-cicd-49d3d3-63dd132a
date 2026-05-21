@@ -1,32 +1,40 @@
 ---
 name: Maintenance Report
-about: Track maintenance, housekeeping, or technical-debt work
-title: "Maintenance: <short description>"
-labels: maintenance, needs-triage
+about: Track maintenance, refactoring, or housekeeping work
+title: "Maintenance: <area of cleanup or refactor>"
+labels: maintenance
 assignees: ''
 ---
 
-## 🧹 Maintenance Task
+## Maintenance Task Description
 
-A clear and concise description of the maintenance work to be done.
+Describe the maintenance, refactoring, or housekeeping work to be performed.
 
-## 🔍 Rationale
+## Scope
 
-Why is this maintenance work needed? What problem does it prevent or solve?
+- What files / modules / systems are affected?
+- Is this a one-off cleanup or recurring chore?
 
-## 🧰 Scope
+## Risk Assessment
 
-- [ ] Item 1
-- [ ] Item 2
-- [ ] Item 3
+- Backwards-compatibility considerations
+- Performance impact
+- Migration / data risk
 
-## 🔗 Related Items / Dependencies
+## Testing Strategy
 
-List any related issues, PRs, or external dependencies here.
+How will the change be validated? Existing tests, new tests, manual QA, etc.
 
-## 📎 Additional Context
+## Priority
 
-Add any other context (impact assessment, rollout plan, rollback plan, etc.).
-Specify priority keywords ("low", "medium", "normal", "minor", "nice-to-have"
-for routine work; "high", "blocking" if maintenance is currently blocking
-other work).
+> Most maintenance work is `medium` or `low` priority. Use one of these
+> keywords in the body to classify:
+> `critical`, `urgent`, `production`, `outage` (critical) ·
+> `important`, `high`, `blocking` (high) ·
+> `medium`, `normal` (medium) ·
+> `low`, `nice-to-have`, `minor` (low)
+
+## Additional Context
+
+Add any other context about this maintenance task here, including links to
+related issues, PRs, or documentation.
